@@ -13,13 +13,21 @@ const arrayTasks = {
     return newArray;
 	},
 
-	// insertAt: function (arr, itemToAdd, index) {
+	insertAt: function (arr, itemToAdd, index) {
+    const newArray = [itemToAdd];
+    const firstHalf = arr.slice(0, index);
+    const lastHalf = arr.slice(index);
+    const array = firstHalf.concat(newArray)
+    const result = array.concat(lastHalf);
+    return result;
+	},
 
-	// },
-
-	// square: function (arr) {
-
-	// },
+	square: function (arr) {
+      const squaredArray = arr.map(function (number) {
+        return number ** 2;
+      })
+      return squaredArray;
+	},
 
 	// sum: function (arr) {
 
