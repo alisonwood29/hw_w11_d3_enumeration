@@ -36,9 +36,12 @@ const arrayTasks = {
       return total;
 	},
 
-	// removeAndClone: function (arr, valueToRemove) {
-
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+    const valuesToKeep = arr.filter(function (value) {
+      return value !== valueToRemove;
+    })
+    return valuesToKeep;
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 
