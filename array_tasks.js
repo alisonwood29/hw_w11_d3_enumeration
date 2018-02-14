@@ -29,9 +29,12 @@ const arrayTasks = {
       return squaredArray;
 	},
 
-	// sum: function (arr) {
-
-	// },
+	sum: function (arr) {
+      const total = arr.reduce(function (acc, number) {
+        return acc + number;
+      })
+      return total;
+	},
 
 	// removeAndClone: function (arr, valueToRemove) {
 
